@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  height: 100vh;
+  background-image: url(Images/bgimg.jpg);
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+.main .box {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.65;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+nav {
+  max-width: 60vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+nav img {
+  color: red;
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.text1 {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+.text1 > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+.text1 > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.text1 > :nth-child(3) {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.btn-redsm {
+  background-color: red;
+  color: white;
+}
+.main input {
+  color: white;
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+text1-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  height: 80vh;
+  margin: auto;
+  color: white;
+}
+
+.secimg {
+  position: relative;
+}
+.secimg img {
+  width: 444px;
+  position: relative;
+  z-index: 10;
+}
+.secimg video {
+  position: absolute;
+  top: 70px;
+  left: 60px;
+  max-width: 73%;
+  max-height: 54%;
+}
+
+#video2 {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  max-width: 55%;
+  max-height: 50%;
+}
+section.first > div {
+  display: flex;
+  flex-direction: column;
+}
+section.first > div :first-child {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 48px;
+  font-weight: bolder;
+}
+section.first > div :nth-child(2) {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 80px;
+}
+.faq h2 {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.faqbox {
+  display: flex;
+  background-color: #2d2d2d;
+  padding: 22px;
+  max-width: 75vw;
+  margin: 10px auto;
+  justify-content: space-between;
+  cursor: pointer;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: 24px;
+  transition: all 1s ease-out;
+}
+.faqbox:hover {
+  background-color: rgba(128, 128, 128, 0.505);
+}
+footer {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  color: white;
+  max-width: 80vw;
+  margin: auto;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+footer .questions {
+  font-size: 16px;
+  padding: 34px 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+@media screen and (max-width: 1024px) {
+  .first {
+    flex-wrap: wrap;
+    padding: 80px 0px;
+    height: auto;
+  }
+  section.first > div {
+    padding: 15px;
+  }
+  section.first > div {
+    text-align: center;
+  }
+  .secimg img {
+    width: 345px;
+  }
+  .secimg video {
+    left: 60px;
+    width: 250px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .text1 > :nth-child(1) {
+    font-size: 32px;
+  }
+  .text1 > :nth-child(2) {
+    font-size: 18px;
+  }
+  .text1 > :nth-child(3) {
+    font-size: 18px;
+  }
+  text1-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  nav {
+    max-width: 90vw;
+  }
+  text1-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-red {
+    display: flex;
+    padding: 3px 20px;
+    margin: 10px 35px;
+  }
+  .main input {
+    padding: 7px 40px;
+  }
+  .main {
+    height: 49vh;
+}
+.main .box {
+  height: 49vh;
+}
+}
